@@ -7,34 +7,47 @@
     <title>Calculadora</title>
 </head>
 <body>
-    <form>
+    <form method="post" action="calculadora.php" target="_blank">
         <fieldset>
             <legend>Calculadora</legend>
 
-            <label>Numero 1</label><br>
-            <input type="number" name="Numero 1" value=""><br><br>
+            Numero 1:<br><input type="text" name="Numero1" value="">
+            <br><br>
+            Numero 2:<br><input type="text" name="Numero2" value="">
+            <br><br>
 
-            <label>Numero 2</label><br>
-            <input type="number" name="Numero 2" value=""><br><br>
+            <p>Opciones:</p>
 
-            <p>Opciones</p>
+            <input type="submit" name="operador" value="+">
 
-            <input type="button" name="+" value="+"><br><br>
+            <input type="submit" name="operador" value="-">
 
-            <input type="button" name="-" value="-"><br><br>
+            <input type="submit" name="operador" value="X">
 
-            <input type="button" name="*" value="*"><br><br>
+            <input type="submit" name="operador" value="/">
+            <br><br>
 
-            <input type="button" name="/" value="/"><br><br>
+            <input type="submit" name="operador" value="Raíz 2">
 
-            <input type="button" name="%" value="%"><br><br>
+            <input type="submit" name="operador" value="x^2">
 
-            <input type="submit" name="Resolver" value="Resolver"><br>
+            <input type="submit" name="operador" value="x^3">
+
+            <input type="submit" name="operador" value="x^x">
+            <br><br>
+
+            <input type="submit" name="operador" value="Fibonacci">
+            <br><br>
+
+            <input type="reset" name="borrar" value="Borrar">
+            <br>
+            <input type="submit" name="submit" value="Resolver">
+            <br>
 
         </fieldset>
     </form>
 
-    <p>Resultado</p>
+    <p>Resultado:</p>
     <a href="inicio.html">Volver a la página principal</a>
 </body>
 </html>

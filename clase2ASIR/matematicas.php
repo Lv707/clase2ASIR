@@ -54,6 +54,14 @@ $nombre = "Miguel";
 $edad = 25;
 $esMayor=true;
 
+#función presentación
+
+function presenta($nombre,$apellidos,$localidad){
+    echo "Mi nombre es: ".$nombre." ".$apellidos." y soy de ".$localidad."<br>";
+}
+
+presenta("Miguel","Oreo","Sevilla");
+
 function persona($nombre,$edad){
     echo "Su nombre es: ".$nombre;
     if ($edad % 2==0) {
@@ -63,9 +71,9 @@ function persona($nombre,$edad){
     }
 }
 
-persona("Nacho",25);
-persona("Gonzalo",25);
-persona("Javi",25);
+persona("Nacho",25)."<br>";
+persona("Gonzalo",25)."<br>";
+persona("Javi",25)."<br>";
 echo "<br>"."<br>";
 
 $alumnos = array("Nacho","Gonzalo","Javi");
