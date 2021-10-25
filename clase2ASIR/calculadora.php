@@ -44,16 +44,16 @@
     }
 
     #Elevado a 2
-    $exponente = 2;
+    $exponente1 = 2;
     function cuadrado($numero1,$exponente) {
-        $res = pow($numero1,$exponente);
+        $res = pow($numero1,2);
         print "El resultado es ".$res."<br>";
     }
 
     #Elevado a 3
-    $exponente = 3;
+    $exponente2 = 3;
     function cubo($numero1,$exponente) {
-        $res = pow($numero1,$exponente);
+        $res = pow($numero1,3);
         print "El resultado es ".$res."<br>";
     }
 
@@ -65,7 +65,17 @@
 
     #Fibonacci
     function fibonacci($numero1) {
-        print "El resultado es ".$res."<br>";
+    $num1 = 0;
+    $num2 = 1;
+    $contador = 0;
+
+    while ($contador < $numero1 ) {
+    print " ".$num1;
+    $num3 = $num2 + $num1;
+    $num1 = $num2;
+    $num2 = $num3;
+    $contador = $contador + 1;
+    }
     }
 
     #Operaciones
@@ -82,8 +92,24 @@
         case '/':
             dividir($numero1,$numero2);
             break;
+        case 'Raíz 2':
+            raíz($numero1);
+            break;
+        case 'x^2':
+            cuadrado($numero1,$exponente1);
+            break;
+        case 'x^3':
+            cubo($numero1,$exponente2);
+            break;
+        case 'x^x':
+            elevar($numero1,$numero2);
+            break;
+        case 'Fibonacci':
+            fibonacci($numero1);
+            break;
+        default:
+        break;
     }
     ?>
-
 </body>
 </html>
