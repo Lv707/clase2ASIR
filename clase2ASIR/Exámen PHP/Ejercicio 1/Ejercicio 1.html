@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <form method="post" action="Ejercicio 1.php" target="_blank">
+        <fieldset>
+            <legend>Conversor de números</legend>
+
+            <label>Opción 1: Número concreto</label><br>
+            Número:<input type="text" name="Numero" value=""><br><br>
+
+            <label>Opción 2: Número aleatorio NOTA: El rango de número es de 0 a 2048</label><br>
+            <input type="radio" name="Opcion2" value="Sí">Sí
+            <input type="radio" name="Opcion2" value="No">No<br><br>
+
+            <label>Realize una conversión</label><br>
+            <select name="Selectores">
+                <option value="Binario">Decimal a Binario</option>
+                <option value="Octal">Decimal a Octal</option>
+                <option value="Hexadecimal">Decimal a Hexadecimal</option>
+                <option value="BinarioDecimal">Binario a Decimal</option>
+                <option value="OctalDecimal">Octal a Decimal</option>
+                <option value="HexadecimalDecimal">Hexadecimal a Decimal</option>
+            </select>
+        </fieldset>
+        <input type="submit" value="Realizar conversión">
+        <input type="reset" value="Reestablecer valores">
+    </form>
+    
+</body>
+</html>
