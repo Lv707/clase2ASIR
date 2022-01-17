@@ -1,11 +1,50 @@
-/*Letra*/
-p {
-    font-family: Arial;
-}
-
-/*Colores*/
-
+/*Color de la Página*/
 body {
-    background-color: whitesmoke;
+    background: #6CA6C1;
+    font-family: 'Roboto', sans-serif;
 }
 
+/*Tamaño de las letras*/
+div {
+    font-size: 15px;
+}
+
+/*Pestañas*/
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 25px;
+}
+
+/*Información Pestañas*/
+.mytabs input[type="radio"] {
+    display: none;
+}
+
+/*Titulo Pestañas*/
+.mytabs label {
+    padding: 25px;
+    background: #2F3061;
+    font-weight: bold;
+}
+
+/*Tamaño Pestañas*/
+.mytabs .tab {
+    width: 100%;
+    padding: 10px;
+    background: #F7FFF7;
+    order: 1;
+    display: none;
+}
+
+/*Click en las Pestñas*/
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+}
+
+/*Color de fondo Pestañas*/
+.mytabs input[type="radio"]:checked + label {
+    background: #FFE66D;
+}
