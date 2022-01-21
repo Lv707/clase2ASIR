@@ -4,47 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Configuración CSS.css">
+    <link rel="stylesheet" href="Configuración_CSS.css">
     <title>Índice</title>
 </head>
 <body>
     <div class="mytabs">
+
         <input type="radio" id="MV" name="mytabs" checked="checked">
         <label for="MV">Mostrar Vuelo</label>
         <div class="tab">
             <fieldset>
                 <form method="post" action="Mostrar_Vuelo.php" target="_blank"><br>
-                    Introduzca su Vuelo:<br>
-                    <input type="text" name="vuelo" value="" placeholder="Compañia-XXX"><br>
+                    Introduzca el Vuelo:<br>
+                    <input type="text" name="vuelo" value=""><br>
                     <input type="submit"><input type="reset"><br><br>
                 </form>
             </fieldset>
-
-
         </div>
+
+
         <input type="radio" id="EAE" name="mytabs">
         <label for="EAE">Estadística del Aeropuerto</label>
         <div class="tab">
-
-
         </div>
+
+
         <input type="radio" id="EC" name="mytabs">
         <label for="EC">Estadística de Ciudades</label>
         <div class="tab">
-
-
         </div>
+
+        
         <input type="radio" id="EAV" name="mytabs">
         <label for="EAV">Estadística del Avión</label>
         <div class="tab">
             <fieldset>
                 <form method="post" action="Estadística_del_Avión.php" target="_blank"><br>
                     Seleccione el Avión:<br>
-                    <input type="text"><br>
+                    <input type="text" name="avion" value=""><br>
                     <input type="submit"><input type="reset"><br><br>
                 </form>
             </fieldset>
         </div>
+
+
     </div>
 </body>
 </html>

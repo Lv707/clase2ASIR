@@ -1,15 +1,7 @@
 <?php
+include 'BBDD_Arrays.php';
 #Mostrar Vuelo
-
-
-
-
-#Arrays
-
-$VDestino = [];
-$VFabricante = [];
-$VTiempo = [1,2,3,4,5,6,7];
-$VNPasajeros = [1,2,3,4,5,6,7,8];
+$IVuelo = $_POST["vuelo"];
 
 
 #Estadística del Aeropuerto
@@ -17,14 +9,16 @@ $VNPasajeros = [1,2,3,4,5,6,7,8];
 /*Media de horas voladas de todos los vuelos*/
 $HMedia = array_sum($VTiempo)/count($VTiempo);
 
-/*Media de horas voladas de todos los vuelos*/
+/*Numero total de pasajeros de todos los vuelos*/
 $TPasajeros = array_sum($VNPasajeros);
 
 /*Número de aviones por fabricante*/
 
-/*Número de aviones por fabricante*/
 
-/*Número de aviones por fabricante*/
+/*Destino con más conexiones*/
+
+
+/*Destinos con menos conexiones*/
 
 
 
@@ -47,15 +41,20 @@ $TVCiudades = count($VDestino);
 
 /*Destinos del avión*/
 
-/*Cual es la ciudad más visitada*/
 
 /*Fabricante del avión*/
 
+
+/*Minutos totales volando*/
+$MTVolando = array_sum($VTiempo);
+
 /*Media de horas voladas*/
+$MHVoladas = (array_sum($VTiempo)/60)/count($VTiempo);
 
 /*Media de pasajeros*/
+$MPasajeros = array_sum($VNPasajeros)/count($VNPasajeros);
 
 /*Pasajeros totales*/
-
+$TPasajeros = array_sum($VNPasajeros);
 
 ?>
