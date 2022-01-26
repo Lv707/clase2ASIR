@@ -3,6 +3,24 @@ include 'BBDD_Arrays.php';
 #Mostrar Vuelo
 $IVuelo = $_POST["vuelo"];
 
+/*Compañia*/
+
+/*Media de pasajeros*/
+
+/*Últimos destinos*/
+
+/*Fabricante*/
+foreach ($AFabricante as $Fabricante =>$IVuelo) {
+    if ($Fabricante == "Airbus" ) {
+        echo "Airbus";
+    } if ($Fabricante == "Boeing" ) {
+        echo "Boeing";
+    }
+}
+
+/*Minutos totales de vuelo*/
+
+
 
 #Estadística del Aeropuerto
 
