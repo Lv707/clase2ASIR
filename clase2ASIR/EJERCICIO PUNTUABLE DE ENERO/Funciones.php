@@ -3,32 +3,14 @@ include 'BBDD_Arrays.php';
 #Mostrar Vuelo
 $IVuelo = $_POST["vuelo"];
 
-/*Compañia*/
-
-/*Media de pasajeros*/
-
-/*Últimos destinos*/
-
-/*Fabricante*/
-foreach ($AFabricante as $Fabricante =>$IVuelo) {
-    if ($Fabricante == "Airbus" ) {
-        echo "Airbus";
-    } if ($Fabricante == "Boeing" ) {
-        echo "Boeing";
-    }
-}
-
-/*Minutos totales de vuelo*/
-
-
 
 #Estadística del Aeropuerto
 
 /*Media de horas voladas de todos los vuelos*/
-$HMedia = array_sum($VTiempo)/count($VTiempo);
+$HMedia = array_sum($ADViaje)/count($ADViaje);
 
 /*Numero total de pasajeros de todos los vuelos*/
-$TPasajeros = array_sum($VNPasajeros);
+$TPasajeros = array_sum($ANPasajeros);
 
 /*Número de aviones por fabricante*/
 
@@ -43,7 +25,7 @@ $TPasajeros = array_sum($VNPasajeros);
 #Estadística de Ciudades
 
 /*El número totales de ciudades visitadas*/
-$TVCiudades = count($VDestino);
+$TVCiudades = count($ADestino);
 
 /*Las veces que se ha ido a una determinada ciudad.*/
 
@@ -64,15 +46,15 @@ $TVCiudades = count($VDestino);
 
 
 /*Minutos totales volando*/
-$MTVolando = array_sum($VTiempo);
+$MTVolando = array_sum($ADViaje);
 
 /*Media de horas voladas*/
-$MHVoladas = (array_sum($VTiempo)/60)/count($VTiempo);
+$MHVoladas = (array_sum($ADViaje)/60)/count($ADViaje);
 
 /*Media de pasajeros*/
-$MPasajeros = array_sum($VNPasajeros)/count($VNPasajeros);
+$MPasajeros = array_sum($ANPasajeros)/count($ANPasajeros);
 
 /*Pasajeros totales*/
-$TPasajeros = array_sum($VNPasajeros);
+$TPasajeros = array_sum($ANPasajeros);
 
 ?>
